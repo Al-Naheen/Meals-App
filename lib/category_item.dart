@@ -24,7 +24,7 @@ class CategoryItem extends StatelessWidget {
     return InkWell(
       onTap: () => selectCategory(context),
       splashColor: Theme.of(context).primaryColor,
-      borderRadius: BorderRadius.circular(25),
+      borderRadius: BorderRadius.circular(30),
       child: Container(
         padding: const EdgeInsets.all(15),
         child: Text(
