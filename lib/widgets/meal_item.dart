@@ -97,8 +97,8 @@ class MealItem extends StatelessWidget {
                   right: 0,
                   child: ClipRRect(
                     borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(15),
-                      bottomLeft: Radius.circular(15),
+                      topLeft: Radius.circular(10),
+                      bottomLeft: Radius.circular(10),
                     ),
                     child: Container(
                       width: 300,
