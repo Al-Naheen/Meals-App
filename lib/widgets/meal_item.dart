@@ -97,6 +97,7 @@ class MealItem extends StatelessWidget {
                   right: 0,
                   child: Container(
                     decoration: BoxDecoration(
+                      color: Colors.white,
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(10),
                         bottomLeft: Radius.circular(10),
