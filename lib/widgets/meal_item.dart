@@ -91,6 +91,7 @@ class MealItem extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
+                // similar to position:relative;
                 Positioned(
                   bottom: 20,
                   right: 0,
@@ -104,7 +105,7 @@ class MealItem extends StatelessWidget {
                     child: Text(
                       title,
                       style: TextStyle(
-                        fontSize: 55,
+                        fontSize: 25,
                         color: Colors.white,
                       ),
                       softWrap: true, // If in one line text doesn't contain then go to next lines
