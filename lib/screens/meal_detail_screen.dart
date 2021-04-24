@@ -18,7 +18,7 @@ class MealDetailScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(mealTitle),
       ),
-      body: Text('duration'),
+      body: Text('duration $duration'),
     );
   }
 }
