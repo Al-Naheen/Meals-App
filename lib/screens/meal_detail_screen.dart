@@ -22,7 +22,7 @@ class MealDetailScreen extends StatelessWidget {
       body: Column(
         children: [
           Text('duration $duration'),
-          Text('identity $id'),
+          Text('identity $mealId'),
         ],
       ),
     );
