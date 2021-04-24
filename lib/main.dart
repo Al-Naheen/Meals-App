@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
             ),
       ),
       // home: CategoriesScreen(),
-      initialRoute: '/', // default is '/'
+      //   initialRoute: '/', // default is '/'
       routes: {
         '/': (ctx) => CategoriesScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
