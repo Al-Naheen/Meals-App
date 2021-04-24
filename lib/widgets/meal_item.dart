@@ -95,28 +95,28 @@ class MealItem extends StatelessWidget {
                 Positioned(
                   bottom: 20,
                   right: 0,
-                                  ClipRRect(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(15),
-                    topRight: Radius.circular(15),
-                  ),
-                  child: Container(
-                    width: 300,
-                    color: Colors.black54,
-                    padding: EdgeInsets.symmetric(
-                      vertical: 5,
-                      horizontal: 20,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(15),
+                      topRight: Radius.circular(15),
                     ),
-                    child: Text(
-                      title,
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: Colors.white,
+                    child: Container(
+                      width: 300,
+                      color: Colors.black54,
+                      padding: EdgeInsets.symmetric(
+                        vertical: 5,
+                        horizontal: 20,
                       ),
-                      softWrap: true, // If in one line text doesn't contain then go to next lines
-                      overflow: TextOverflow.fade,
+                      child: Text(
+                        title,
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Colors.white,
+                        ),
+                        softWrap: true, // If in one line text doesn't contain then go to next lines
+                        overflow: TextOverflow.fade,
+                      ),
                     ),
-                  ),
                   ),
                 )
               ],
