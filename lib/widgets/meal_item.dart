@@ -24,7 +24,7 @@ class MealItem extends StatelessWidget {
     switch (complexity) {
       case Complexity.Simple:
         return 'Simple';
-        break;
+        break; // break doesn't need if we use Return
       case Complexity.Challenging:
         return 'Challenging';
         break;
@@ -82,7 +82,7 @@ class MealItem extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(15),
-                    bottomLeft: Radius.circular(15),
+                    topRight: Radius.circular(15),
                   ),
                   child: Image.network(
                     imageUrl,
