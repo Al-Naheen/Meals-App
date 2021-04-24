@@ -82,7 +82,7 @@ class MealItem extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(15),
-                    topRight: Radius.circular(15),
+                    bottomLeft: Radius.circular(15),
                   ),
                   child: Image.network(
                     imageUrl,
@@ -95,14 +95,12 @@ class MealItem extends StatelessWidget {
                 Positioned(
                   bottom: 20,
                   right: 0,
+                                  ClipRRect(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(15),
+                    topRight: Radius.circular(15),
+                  ),
                   child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black54,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(10),
-                        bottomLeft: Radius.circular(10),
-                      ),
-                    ),
                     width: 300,
                     color: Colors.black54,
                     padding: EdgeInsets.symmetric(
@@ -118,6 +116,7 @@ class MealItem extends StatelessWidget {
                       softWrap: true, // If in one line text doesn't contain then go to next lines
                       overflow: TextOverflow.fade,
                     ),
+                  ),
                   ),
                 )
               ],
