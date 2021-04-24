@@ -14,7 +14,7 @@ class CategoryMealsScreen extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          'The Recipes For The Category!',
+          'The Recipes For The Category! $categoryId',
         ),
       ),
     );
