@@ -13,19 +13,20 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.pink,
         accentColor: Colors.amber,
         canvasColor: Color.fromRGBO(255, 254, 229, 1), // Background color of the entire App
-        fontFamily: 'Raleway',
+        // fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
-            body1: TextStyle(
-              color: Color.fromRGBO(20, 51, 51, 1),
+              body1: TextStyle(
+                color: Color.fromRGBO(20, 51, 51, 1),
+              ),
+              body2: TextStyle(
+                color: Color.fromRGBO(20, 51, 51, 1),
+              ),
+              title: TextStyle(
+                fontSize: 20,
+                //   fontFamily: 'RobotoCondensed',
+                fontWeight: FontWeight.bold,
+              ),
             ),
-            body2: TextStyle(
-              color: Color.fromRGBO(20, 51, 51, 1),
-            ),
-            title: TextStyle(
-              fontSize: 20,
-              //   fontFamily: 'RobotoCondensed',
-              fontWeight: FontWeight.bold,
-            )),
       ),
       home: CategoriesScreen(),
     );
