@@ -68,6 +68,7 @@ class MealItem extends StatelessWidget {
     return InkWell(
       onTap: () => selectMeal(context),
       child: Card(
+        // 3 shape -- RoundedRectangleBorder, BeveledRectangleBorder, StadiumBorder
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
         ),
@@ -77,6 +78,7 @@ class MealItem extends StatelessWidget {
           children: <Widget>[
             Stack(
               children: <Widget>[
+                // maintaining the Rounded Corners...ClipRRect is rarely used
                 ClipRRect(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(15),
@@ -102,7 +104,7 @@ class MealItem extends StatelessWidget {
                     child: Text(
                       title,
                       style: TextStyle(
-                        fontSize: 25,
+                        fontSize: 35,
                         color: Colors.white,
                       ),
                       softWrap: true,
