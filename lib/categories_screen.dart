@@ -10,7 +10,7 @@ class CategoriesScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('DeliMeal'),
       ),
-      body: ListView(
+      body: GridView(
         padding: const EdgeInsets.all(20),
         children: DUMMY_CATEGORIES
             .map(
