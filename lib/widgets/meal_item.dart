@@ -45,7 +45,7 @@ class MealItem extends StatelessWidget {
         return 'Pricey';
         break;
       case Affordability.Luxurious:
-        return 'Expensive';
+        return 'Luxurious';
         break;
       default:
         return 'Unknown';
@@ -65,7 +65,7 @@ class MealItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return GestureDetector(
       onTap: () => selectMeal(context),
       child: Card(
         shape: RoundedRectangleBorder(
