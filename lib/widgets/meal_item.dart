@@ -96,6 +96,12 @@ class MealItem extends StatelessWidget {
                   bottom: 20,
                   right: 0,
                   child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(15),
+                        bottomLeft: Radius.circular(15),
+                      ),
+                    ),
                     width: 300,
                     color: Colors.black54,
                     padding: EdgeInsets.symmetric(
