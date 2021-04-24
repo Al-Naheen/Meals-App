@@ -4,6 +4,7 @@ import '../models/meal.dart';
 import '../screens/meal_detail_screen.dart';
 
 class MealItem extends StatelessWidget {
+  final String id;
   final String title;
   final String imageUrl;
   final int duration;
@@ -11,6 +12,7 @@ class MealItem extends StatelessWidget {
   final Affordability affordability;
 
   MealItem({
+    @required this.id,
     @required this.title,
     @required this.imageUrl,
     @required this.affordability,
@@ -56,6 +58,7 @@ class MealItem extends StatelessWidget {
       arguments: {
         'title': title,
         'duration': duration,
+        'id': id, // keep track Favorites
       },
     );
   }

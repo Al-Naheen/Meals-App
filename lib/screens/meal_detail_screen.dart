@@ -12,13 +12,19 @@ class MealDetailScreen extends StatelessWidget {
     final routeArgs = ModalRoute.of(context).settings.arguments as Map;
 
     final mealTitle = routeArgs['title'];
+    final mealId = routeArgs['id']; // keep track Favorites
     final duration = routeArgs['duration'];
 
     return Scaffold(
       appBar: AppBar(
         title: Text(mealTitle),
       ),
-      body: Text('duration $duration'),
+      body: Column(
+        children: [
+          Text('duration $duration'),
+          Text('identity $id'),
+        ],
+      ),
     );
   }
 }
