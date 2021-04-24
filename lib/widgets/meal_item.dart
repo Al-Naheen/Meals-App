@@ -104,10 +104,10 @@ class MealItem extends StatelessWidget {
                     child: Text(
                       title,
                       style: TextStyle(
-                        fontSize: 35,
+                        fontSize: 55,
                         color: Colors.white,
                       ),
-                      softWrap: true,
+                      softWrap: true, // If in one line text doesn't contain then go to next lines
                       overflow: TextOverflow.fade,
                     ),
                   ),
