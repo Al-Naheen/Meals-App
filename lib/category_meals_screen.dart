@@ -4,7 +4,7 @@ class CategoryMealsScreen extends StatelessWidget {
   final String categoryId;
   final String categoryTitle;
 
-  CategoryMealsScreen(this.categoryId, this.categoryTitle);
+  CategoryMealsScreen(this.categoryTitle);
 
   @override
   Widget build(BuildContext context) {
