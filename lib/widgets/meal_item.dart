@@ -65,7 +65,7 @@ class MealItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
       onTap: () => selectMeal(context),
       child: Card(
         shape: RoundedRectangleBorder(
