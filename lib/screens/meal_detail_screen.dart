@@ -32,7 +32,7 @@ class MealDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final routeArgs = ModalRoute.of(context).settings.arguments as Map<String>;
+    final routeArgs = ModalRoute.of(context).settings.arguments as Map;
     final mealId = routeArgs['id'];
     final affordabilityText = routeArgs['affordabilityText'];
     final complexityText = routeArgs['complexityText'];
