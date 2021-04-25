@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
 
-      // any Named-Routes that used in the app but not Registered in the above Routes-Map
+      // any Named-Routes that used in the app but not Registered in the above Routes-Map (rarely Used)
       onGenerateRoute: (settings) {
         print(settings.arguments);
         // if (settings.name == '/meal-detail') {

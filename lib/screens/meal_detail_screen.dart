@@ -44,7 +44,7 @@ class MealDetailScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Container(
-              height: 300,
+              height: 250,
               width: double.infinity,
               child: Image.network(
                 selectedMeal.imageUrl,
