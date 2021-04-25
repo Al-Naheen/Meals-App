@@ -89,7 +89,12 @@ class MealDetailScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.only(
+                left: 30,
+                right: 30,
+                top: 30,
+                bottom: 400,
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
