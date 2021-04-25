@@ -55,11 +55,7 @@ class MealItem extends StatelessWidget {
   void selectMeal(BuildContext ctx) {
     Navigator.of(ctx).pushNamed(
       MealDetailScreen.routeName,
-      arguments: {
-        'title': title,
-        'duration': duration,
-        'id': id, // keep track Favorites
-      },
+      arguments: id,
     );
   }
 

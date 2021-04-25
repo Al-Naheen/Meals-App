@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import './screens/tabs_screen.dart';
 import './screens/category_meals_screen.dart';
 import './screens/categories_screen.dart';
 import './screens/meal_detail_screen.dart';
@@ -37,6 +38,24 @@ class MyApp extends StatelessWidget {
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
+
+      // any Named-Routes that used in the app but not Registered in the above Routes-Map
+      onGenerateRoute: (settings) {
+        print(settings.arguments);
+        // if (settings.name == '/meal-detail') {
+        //   return ...;
+        // } else if (settings.name == '/something-else') {
+        //   return ...;
+        // }
+        // return MaterialPageRoute(builder: (ctx) => CategoriesScreen(),);
+      },
+
+      // if app crashes/routes doesn't work...then onUnknownRoute is the Last-Option(similar to 404 page & default case in switch statement)
+      //   onUnknownRoute: (settings) {
+      //     return MaterialPageRoute(
+      //       builder: (ctx) => CategoriesScreen(),
+      //     );
+      //   },
     );
   }
 }
