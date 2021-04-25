@@ -24,7 +24,7 @@ class MealDetailScreen extends StatelessWidget {
       ),
       margin: EdgeInsets.all(10),
       padding: EdgeInsets.all(10),
-      height: 170,
+      height: 170, // make dynamic with Media-Query
       width: 300,
       child: child,
     );
@@ -93,7 +93,7 @@ class MealDetailScreen extends StatelessWidget {
                 left: 30,
                 right: 30,
                 top: 30,
-                bottom: 40,
+                bottom: 45,
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
