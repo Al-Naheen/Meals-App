@@ -93,7 +93,7 @@ class MealDetailScreen extends StatelessWidget {
                 left: 30,
                 right: 30,
                 top: 30,
-                bottom: 400,
+                bottom: 40,
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
