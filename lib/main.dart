@@ -51,11 +51,11 @@ class MyApp extends StatelessWidget {
       },
 
       // if app crashes/routes doesn't work...then onUnknownRoute is the Last-Option(similar to 404 page & default case in switch statement)
-      //   onUnknownRoute: (settings) {
-      //     return MaterialPageRoute(
-      //       builder: (ctx) => CategoriesScreen(),
-      //     );
-      //   },
+      onUnknownRoute: (settings) {
+        return MaterialPageRoute(
+          builder: (ctx) => CategoriesScreen(),
+        );
+      },
     );
   }
 }
