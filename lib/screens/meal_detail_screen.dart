@@ -32,7 +32,10 @@ class MealDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mealId = ModalRoute.of(context).settings.arguments as String;
+    final routeArgs = ModalRoute.of(context).settings.arguments as Map<String>;
+    final mealId = routeArgs['id'];
+    final affordabilityText = routeArgs['affordabilityText'];
+    final complexityText = routeArgs['complexityText'];
 
     final selectedMeal = DUMMY_MEALS.firstWhere((meal) => meal.id == mealId);
 
@@ -83,6 +86,47 @@ class MealDetailScreen extends StatelessWidget {
                   ],
                 ),
                 itemCount: selectedMeal.steps.length,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.schedule,
+                      ),
+                      SizedBox(
+                        width: 6,
+                      ),
+                      Text('${selectedMeal.duration} min'),
+                    ],
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.work,
+                      ),
+                      SizedBox(
+                        width: 6,
+                      ),
+                      Text(complexityText),
+                    ],
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.attach_money,
+                      ),
+                      SizedBox(
+                        width: 6,
+                      ),
+                      Text(affordabilityText),
+                    ],
+                  ),
+                ],
               ),
             ),
           ],
