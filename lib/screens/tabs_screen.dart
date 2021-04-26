@@ -16,7 +16,6 @@ class _TabsScreenState extends State<TabsScreen> {
       // initialIndex: 0,
       child: Scaffold(
         appBar: AppBar(
-          bottom: Text('Meals'),
           title: TabBar(
             tabs: <Widget>[
               Tab(
@@ -33,6 +32,7 @@ class _TabsScreenState extends State<TabsScreen> {
               ),
             ],
           ),
+          bottom: Text('Meals'),
         ),
         body: TabBarView(
           children: <Widget>[
