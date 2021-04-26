@@ -17,7 +17,7 @@ class _TabsScreenState extends State<TabsScreen> {
       child: Scaffold(
         appBar: AppBar(
           // title: Text('Meals'),
-          // titleSpacing: 2,
+          titleSpacing: 0,
 
           title: TabBar(
             // title na bottom hobe
