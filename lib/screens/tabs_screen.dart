@@ -22,6 +22,7 @@ class _TabsScreenState extends State<TabsScreen> {
             child: TabBar(
               tabs: <Widget>[
                 Tab(
+                  iconMargin: EdgeInsets.symmetric(vertical: 10),
                   icon: Icon(
                     Icons.category,
                   ),
