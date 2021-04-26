@@ -17,21 +17,24 @@ class _TabsScreenState extends State<TabsScreen> {
       child: Scaffold(
         appBar: AppBar(
           //   title: Text('Meals'),
-          title: TabBar(
-            tabs: <Widget>[
-              Tab(
-                icon: Icon(
-                  Icons.category,
+          title: Container(
+              margin:EdgeInsets.all(10)
+            child: TabBar(
+              tabs: <Widget>[
+                Tab(
+                  icon: Icon(
+                    Icons.category,
+                  ),
+                  text: 'Categories',
                 ),
-                text: 'Categories',
-              ),
-              Tab(
-                icon: Icon(
-                  Icons.star,
+                Tab(
+                  icon: Icon(
+                    Icons.star,
+                  ),
+                  text: 'Favorites',
                 ),
-                text: 'Favorites',
-              ),
-            ],
+              ],
+            ),
           ),
         ),
         body: TabBarView(
