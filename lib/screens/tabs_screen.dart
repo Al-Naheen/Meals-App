@@ -16,11 +16,11 @@ class _TabsScreenState extends State<TabsScreen> {
     },
     {
       'page': FavoritesScreen(),
-      'title': 'Your Favorites',
+      'title': 'Home',
     },
     {
       'page': FavoritesScreen(),
-      'title': 'LOL',
+      'title': 'Your Favorites',
     },
   ];
   int _selectedPageIndex = 1;
@@ -50,6 +50,11 @@ class _TabsScreenState extends State<TabsScreen> {
             // backgroundColor: Theme.of(context).primaryColor, //default
             icon: Icon(Icons.category),
             title: Text('Categories'),
+          ),
+          BottomNavigationBarItem(
+            // backgroundColor: Theme.of(context).primaryColor, //default
+            icon: Icon(Icons.Home),
+            title: Text('Home'),
           ),
           BottomNavigationBarItem(
             // backgroundColor: Theme.of(context).primaryColor, //default
