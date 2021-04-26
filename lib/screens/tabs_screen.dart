@@ -15,8 +15,16 @@ class _TabsScreenState extends State<TabsScreen> {
       'title': 'Categories',
     },
     {
+      'page': CategoriesScreen(),
+      'title': 'Categories',
+    },
+    {
       'page': FavoritesScreen(),
       'title': 'Home',
+    },
+    {
+      'page': FavoritesScreen(),
+      'title': 'Your Favorites',
     },
     {
       'page': FavoritesScreen(),
@@ -53,8 +61,18 @@ class _TabsScreenState extends State<TabsScreen> {
           ),
           BottomNavigationBarItem(
             // backgroundColor: Theme.of(context).primaryColor, //default
+            icon: Icon(Icons.category),
+            title: Text('Categories'),
+          ),
+          BottomNavigationBarItem(
+            // backgroundColor: Theme.of(context).primaryColor, //default
             icon: Icon(Icons.home),
             title: Text('Home'),
+          ),
+          BottomNavigationBarItem(
+            // backgroundColor: Theme.of(context).primaryColor, //default
+            icon: Icon(Icons.star),
+            title: Text('Favorites'),
           ),
           BottomNavigationBarItem(
             // backgroundColor: Theme.of(context).primaryColor, //default
