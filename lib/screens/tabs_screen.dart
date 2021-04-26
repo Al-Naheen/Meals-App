@@ -52,7 +52,7 @@ class _TabsScreenState extends State<TabsScreen> {
         unselectedItemColor: Colors.white,
         selectedItemColor: Theme.of(context).accentColor,
         // currentIndex: _selectedPageIndex,
-        type: BottomNavigationBarType.fixed, // default is fixed
+        type: BottomNavigationBarType.fixed, // default isn't always fixed
         items: [
           BottomNavigationBarItem(
             // backgroundColor: Theme.of(context).primaryColor, //default
