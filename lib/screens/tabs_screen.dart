@@ -32,7 +32,8 @@ class _TabsScreenState extends State<TabsScreen> {
               ),
             ],
           ),
-          bottom: Text('Meals'),
+          //   bottom: Text('Meals'),
+          titleSpacing: 2,
         ),
         body: TabBarView(
           children: <Widget>[
