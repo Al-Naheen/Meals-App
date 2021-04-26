@@ -26,7 +26,7 @@ class _TabsScreenState extends State<TabsScreen> {
                 text: 'Categories',
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 20),
+                padding: EdgeInsets.symmetric(vertical: 20),
                 child: Tab(
                   icon: Icon(
                     Icons.star,
