@@ -13,11 +13,12 @@ class _TabsScreenState extends State<TabsScreen> {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 3,
-      // initialIndex: 0,
+      initialIndex: 1, // default is 0
       child: Scaffold(
         appBar: AppBar(
           // title: Text('Meals'),
-          titleSpacing: 2,
+          // titleSpacing: 2,
+
           title: TabBar(
             // title na bottom hobe
             tabs: <Widget>[
@@ -31,7 +32,7 @@ class _TabsScreenState extends State<TabsScreen> {
                 icon: Icon(
                   Icons.home,
                 ),
-                text: 'Favorites',
+                text: 'Home',
               ),
               Tab(
                 icon: Icon(
