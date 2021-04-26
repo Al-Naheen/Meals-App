@@ -31,6 +31,7 @@ class _TabsScreenState extends State<TabsScreen> {
       'title': 'Your Favorites',
     },
   ];
+
   int _selectedPageIndex = 2;
 
   void _selectPage(int index) {
@@ -51,13 +52,13 @@ class _TabsScreenState extends State<TabsScreen> {
         backgroundColor: Theme.of(context).primaryColor,
         unselectedItemColor: Colors.white,
         selectedItemColor: Theme.of(context).accentColor,
-        currentIndex: _selectedPageIndex,
+        currentIndex: _selectedPageIndex, // show Active-Tab
         type: BottomNavigationBarType.fixed, // default isn't always fixed
         items: [
           BottomNavigationBarItem(
             // backgroundColor: Theme.of(context).primaryColor, //default
             icon: Icon(Icons.category),
-            title: Text('Categories'),
+            title: Text('LoL'),
           ),
           BottomNavigationBarItem(
             // backgroundColor: Theme.of(context).primaryColor, //default
@@ -77,7 +78,7 @@ class _TabsScreenState extends State<TabsScreen> {
           BottomNavigationBarItem(
             // backgroundColor: Theme.of(context).primaryColor, //default
             icon: Icon(Icons.star),
-            title: Text('Favorites'),
+            title: Text('x'),
           ),
         ],
       ),
