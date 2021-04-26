@@ -5,7 +5,7 @@ class MainDrawer extends StatelessWidget {
     return ListTile(
       leading: Icon(
         icon,
-        size: 26,
+        size: 16,
       ),
       title: Text(
         title,
