@@ -53,7 +53,7 @@ class _TabsScreenState extends State<TabsScreen> {
           ),
           BottomNavigationBarItem(
             // backgroundColor: Theme.of(context).primaryColor, //default
-            icon: Icon(Icons.Home),
+            icon: Icon(Icons.home),
             title: Text('Home'),
           ),
           BottomNavigationBarItem(
