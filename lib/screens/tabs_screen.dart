@@ -21,9 +21,9 @@ class _TabsScreenState extends State<TabsScreen> {
 
           // title na bottom hobe
           title: TabBar(
-            unselectedLabelColor: Colors.purple,
+            unselectedLabelColor: Colors.white,
             indicatorColor: Colors.yellow,
-            labelColor: Colors.blue,
+            labelColor: Theme.of(context).accentColor,
             tabs: <Widget>[
               Tab(
                 icon: Icon(
