@@ -12,7 +12,7 @@ class _TabsScreenState extends State<TabsScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 4,
       initialIndex: 1, // default is 0
       child: Scaffold(
         appBar: AppBar(
