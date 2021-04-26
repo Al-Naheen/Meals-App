@@ -16,8 +16,7 @@ class _TabsScreenState extends State<TabsScreen> {
       // initialIndex: 0,
       child: Scaffold(
         appBar: AppBar(
-          titleSpacing: 20,
-          //   title: Text('Meals'),
+          bottom: Text('Meals'),
           title: TabBar(
             tabs: <Widget>[
               Tab(
