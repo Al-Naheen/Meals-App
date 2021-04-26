@@ -43,12 +43,12 @@ class _TabsScreenState extends State<TabsScreen> {
         // type: BottomNavigationBarType.shifting, // default is fixed
         items: [
           BottomNavigationBarItem(
-            backgroundColor: Theme.of(context).primaryColor, //default
+            // backgroundColor: Theme.of(context).primaryColor, //default
             icon: Icon(Icons.category),
             title: Text('Categories'),
           ),
           BottomNavigationBarItem(
-            backgroundColor: Theme.of(context).primaryColor, //default
+            // backgroundColor: Theme.of(context).primaryColor, //default
             icon: Icon(Icons.star),
             title: Text('Favorites'),
           ),
