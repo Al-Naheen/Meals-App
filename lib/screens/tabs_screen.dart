@@ -18,7 +18,7 @@ class _TabsScreenState extends State<TabsScreen> {
         appBar: AppBar(
           //   title: Text('Meals'),
           title: Container(
-            padding: EdgeInsets.all(20),
+            margin: EdgeInsets.symmetric(vertical: 10),
             child: TabBar(
               tabs: <Widget>[
                 Tab(
