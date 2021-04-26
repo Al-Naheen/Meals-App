@@ -19,12 +19,19 @@ class _TabsScreenState extends State<TabsScreen> {
           // title: Text('Meals'),
           titleSpacing: 2,
           title: TabBar(
+            // title na bottom hobe
             tabs: <Widget>[
               Tab(
                 icon: Icon(
                   Icons.category,
                 ),
                 text: 'Categories',
+              ),
+              Tab(
+                icon: Icon(
+                  Icons.home,
+                ),
+                text: 'Favorites',
               ),
               Tab(
                 icon: Icon(
@@ -38,6 +45,7 @@ class _TabsScreenState extends State<TabsScreen> {
         body: TabBarView(
           children: <Widget>[
             CategoriesScreen(),
+            FavoritesScreen(),
             FavoritesScreen(),
           ],
         ),
