@@ -6,7 +6,7 @@ class MainDrawer extends StatelessWidget {
   void selectPage() {}
 
   // Instead of Builder-Method, create a separate Widget-Class(if stateful)
-  Widget buildListTile(String title, IconData icon, BuildContext ctx, routename) {
+  Widget buildListTile(String title, IconData icon, tapHandler) {
     return ListTile(
       leading: Icon(
         icon,
@@ -20,9 +20,7 @@ class MainDrawer extends StatelessWidget {
           fontWeight: FontWeight.bold, // bold == w700
         ),
       ),
-      onTap: () {
-        Navigator.of(ctx).pushNamed(routename);
-      },
+      onTap: tapHandler,
     );
   }
 
@@ -52,14 +50,16 @@ class MainDrawer extends StatelessWidget {
           buildListTile(
             'Meals',
             Icons.restaurant,
-            context,
-            '/',
+            () {
+              Navigator.of(context).pushNamed('/');
+            },
           ),
           buildListTile(
             'Filters',
             Icons.settings,
-            context,
-            FiltersScreen.routeName,
+            () {
+              Navigator.of(context).pushNamed(FiltersScreen.routeName);
+            },
           ),
         ],
       ),
