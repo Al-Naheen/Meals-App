@@ -16,10 +16,14 @@ class _TabsScreenState extends State<TabsScreen> {
     },
     {
       'page': FavoritesScreen(),
-      'title': 'Your Favorite',
+      'title': 'Your Favorites',
+    },
+    {
+      'page': FavoritesScreen(),
+      'title': 'LOL',
     },
   ];
-  int _selectedPageIndex = 0;
+  int _selectedPageIndex = 1;
 
   void _selectPage(int index) {
     setState(() {
