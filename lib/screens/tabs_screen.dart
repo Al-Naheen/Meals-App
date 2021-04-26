@@ -19,8 +19,9 @@ class _TabsScreenState extends State<TabsScreen> {
           // title: Text('Meals'),
           //   titleSpacing: 0,
 
+          // title na bottom hobe
           title: TabBar(
-            // title na bottom hobe
+            labelColor: Colors.blue,
             tabs: <Widget>[
               Tab(
                 icon: Icon(
