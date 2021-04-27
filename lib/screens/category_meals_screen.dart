@@ -22,12 +22,13 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
 
   @override
   void initState() {
-    // ...
+    // .of(context) things don't work in initState()
     super.initState();
   }
 
   @override
   void didChangeDependencies() {
+    // !_loadedInitData -- prevent to run didChangeDependencies() twice or more than 2 times
     if (!_loadedInitData) {
       final routeArgs = ModalRoute.of(context).settings.arguments as Map<String, String>;
       categoryTitle = routeArgs['title'];
