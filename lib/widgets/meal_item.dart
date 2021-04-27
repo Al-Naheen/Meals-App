@@ -60,12 +60,12 @@ class MealItem extends StatelessWidget {
         'complexityText': complexityText,
         'affordabilityText': affordabilityText,
       },
-    // push a page & when this page is Popped then .then runs
+      // push a page & when this page is Popped then .then runs
     ).then((result) {
-    //   if (result != null) {
-    //     removeItem(result);
-    //   }
-    print(result)
+      //   if (result != null) {
+      //     removeItem(result);
+      //   }
+      print(result);
     });
   }
 
