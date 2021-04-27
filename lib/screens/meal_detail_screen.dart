@@ -143,7 +143,7 @@ class MealDetailScreen extends StatelessWidget {
         ),
         onPressed: () {
           // similar to Passing-Arguments(Backward)
-          Navigator.of(context).pop(mealId); // .canPop()
+          Navigator.of(context).popAndPushNamed('/filters'); // .canPop()
         },
       ),
     );
