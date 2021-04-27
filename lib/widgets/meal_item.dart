@@ -10,7 +10,7 @@ class MealItem extends StatelessWidget {
   final int duration;
   final Complexity complexity;
   final Affordability affordability;
-  final Function removeItem
+  final Function removeItem;
 
   MealItem({
     @required this.id,
@@ -64,9 +64,9 @@ class MealItem extends StatelessWidget {
       },
       // push a page & when this page is Popped then .then runs
     ).then((result) {
-        if (result != null) {
-          removeItem(result);
-        }
+      if (result != null) {
+        removeItem(result);
+      }
     });
   }
 
