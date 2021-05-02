@@ -5,6 +5,10 @@ import './categories_screen.dart';
 import '../widgets/main_drawer.dart';
 
 class TabsScreen extends StatefulWidget {
+  final List<Meal> favoriteMeals;
+
+  TabsScreen(this.favoriteMeals);
+
   @override
   _TabsScreenState createState() => _TabsScreenState();
 }
@@ -16,19 +20,11 @@ class _TabsScreenState extends State<TabsScreen> {
       'title': 'Categories',
     },
     {
-      'page': CategoriesScreen(),
-      'title': 'Categories',
-    },
-    {
       'page': FavoritesScreen(),
       'title': 'Home',
     },
     {
-      'page': FavoritesScreen(),
-      'title': 'Your Favorites',
-    },
-    {
-      'page': FavoritesScreen(),
+      'page': FavoritesScreen(widget.favoriteMeals),
       'title': 'Your Favorites',
     },
   ];
@@ -60,11 +56,6 @@ class _TabsScreenState extends State<TabsScreen> {
           BottomNavigationBarItem(
             // backgroundColor: Theme.of(context).primaryColor, //default
             icon: Icon(Icons.category),
-            title: Text('LoL'),
-          ),
-          BottomNavigationBarItem(
-            // backgroundColor: Theme.of(context).primaryColor, //default
-            icon: Icon(Icons.category),
             title: Text('Categories'),
           ),
           BottomNavigationBarItem(
@@ -76,11 +67,6 @@ class _TabsScreenState extends State<TabsScreen> {
             // backgroundColor: Theme.of(context).primaryColor, //default
             icon: Icon(Icons.star),
             title: Text('Favorites'),
-          ),
-          BottomNavigationBarItem(
-            // backgroundColor: Theme.of(context).primaryColor, //default
-            icon: Icon(Icons.star),
-            title: Text('xD'),
           ),
         ],
       ),
